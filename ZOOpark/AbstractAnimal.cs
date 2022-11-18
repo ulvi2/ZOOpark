@@ -10,12 +10,12 @@ namespace ZOOpark
     public abstract class AbstractAnimal
     {
         public string Name { get; set; }
-        public string Vid { get; protected set; }4
+        public string Vid { get; protected set; }
         public BiomType Biome { get; protected set; }
         public double EatenFood { get; protected set; }
         public double NaxFood { get; protected set; }
         public double SquareToUnit { get; set; }
-        public double Age { get; set; }çççjk
+        public double Age { get; set; }
         public bool IsPredator { get; protected set; }
         public List<FoodType> Food;
         protected string _sound;
@@ -44,6 +44,11 @@ namespace ZOOpark
                 result = $"{foodWeight}kg is too much for {Name}";
                 EatenFood = NaxFood;
             }
+            return result;
+         }
+        public virtual string MakeSound()
+        {
+            string result = $"{Name}:{_sound}";
             return result;
         }
     }
