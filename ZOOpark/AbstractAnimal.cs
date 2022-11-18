@@ -10,12 +10,12 @@ namespace ZOOpark
     public abstract class AbstractAnimal
     {
         public string Name { get; set; }
-        public string Vid { get; protected set; }
+        public string Vid { get; protected set; }4
         public BiomType Biome { get; protected set; }
         public double EatenFood { get; protected set; }
         public double NaxFood { get; protected set; }
         public double SquareToUnit { get; set; }
-        public double Age { get; set; }
+        public double Age { get; set; }çççjk
         public bool IsPredator { get; protected set; }
         public List<FoodType> Food;
         protected string _sound;
